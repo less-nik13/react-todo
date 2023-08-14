@@ -15,7 +15,7 @@ function App() {
         <>
             <Button onClick={() => setCount(prev => prev + 1)}>Click me</Button>
             <h1>Count: {count}</h1>
-            <BrowserRouter>
+            <BrowserRouter basename='/react-todo/'>
                 <Routes>
                     <Route index element={<HomePage />}></Route>
                     <Route path='/about' element={<AboutPage />}></Route>
