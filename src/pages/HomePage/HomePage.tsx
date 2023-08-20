@@ -11,6 +11,7 @@ export default function HomePage() {
             <Button onClick={() => setCount(prev => prev + 1)}>Click me</Button>
             <h1>Count: {count}</h1>
             <h2>{import.meta.env.MODE}</h2>
+            <h3>{import.meta.env.VITE_CLIENT_ID}</h3>
             <nav>
                 <ul>
                     <li>
@@ -18,6 +19,9 @@ export default function HomePage() {
                     </li>
                     <li>
                         <NavLink to={'/about'}>AboutPage</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={'/test/1'}>TestPage</NavLink>
                     </li>
                 </ul>
             </nav>
